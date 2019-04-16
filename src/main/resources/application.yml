@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: mongodb.jdbc.MongoDriver
+  data:
+    mongodb:
+        port: 27017
+        host: localhost
+        database: sandbox
