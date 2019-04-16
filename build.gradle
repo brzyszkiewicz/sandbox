@@ -4,6 +4,7 @@ plugins {
 }
 
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'groovy'
 
 group = 'pl.mick.jenkins.value.villaage'
 version = '0.0.1-SNAPSHOT'
@@ -25,5 +26,10 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testCompile(
+            'org.springframework.boot:spring-boot-starter-test',
+            'junit:junit:5',
+            'org.spockframework:spock-core:1.1-groovy-2.4.4',
+            'org.codehaus.groovy:groovy-all:2.4.4'
+    )
 }
