@@ -27,9 +27,6 @@ dependencies {
     runtimeOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
     testCompile(
-            'org.springframework.boot:spring-boot-starter-test',
-            'junit:junit:5',
-            'org.spockframework:spock-core:1.1-groovy-2.4.4',
-            'org.codehaus.groovy:groovy-all:2.4.4'
+            'org.spockframework:spock-core:1.1-groovy-2.4.4'
     )
 }
